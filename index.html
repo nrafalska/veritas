@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Онлайн-школа Veritas</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    html, body {
+      font-family: 'Inter', sans-serif;
+    }
     .fade-in {
       opacity: 0;
       transform: translateY(30px);
@@ -17,84 +21,86 @@
     }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-gray-50 text-gray-900">
 
   <!-- Header -->
-  <header class="bg-white shadow p-4">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
-      <div class="flex items-center gap-2">
-        <img src="logo.png" alt="Logo" class="h-10">
-        <h1 class="text-xl font-bold">Онлайн-школа Veritas</h1>
+  <header class="bg-white shadow-md py-5 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="Logo" class="h-10 w-auto">
+        <span class="text-lg sm:text-xl font-bold">Онлайн-школа Veritas</span>
       </div>
-      <nav class="flex flex-wrap justify-center gap-4 text-sm">
-        <a href="#about" class="hover:underline">Про нас</a>
-        <a href="#services" class="hover:underline">Послуги</a>
-        <a href="#offer" class="hover:underline">Оферта</a>
-        <a href="#signup" class="hover:underline">Запис</a>
-        <a href="#contact" class="hover:underline">Контакти</a>
+      <nav class="flex flex-wrap gap-6 text-sm sm:text-base font-medium">
+        <a href="#about" class="hover:text-indigo-600">Про нас</a>
+        <a href="#services" class="hover:text-indigo-600">Послуги</a>
+        <a href="#offer" class="hover:text-indigo-600">Оферта</a>
+        <a href="#signup" class="hover:text-indigo-600">Запис</a>
+        <a href="#contact" class="hover:text-indigo-600">Контакти</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="bg-gradient-to-r from-purple-300 to-indigo-400 py-16 px-4 text-center text-white">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Преміум навчання з математики та IT</h2>
-    <p class="text-base sm:text-lg">Індивідуальний підхід. Досвідчені викладачі. Видимі результати.</p>
+  <section class="bg-gradient-to-r from-[#a18cd1] to-[#fbc2eb] py-24 px-4 text-center text-white">
+    <h1 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">Преміум навчання з математики та IT</h1>
+    <p class="text-lg sm:text-xl font-medium">Індивідуальний підхід. Досвідчені викладачі. Видимі результати.</p>
   </section>
 
   <!-- About -->
-  <section id="about" class="fade-in max-w-4xl mx-auto py-10 px-4">
-    <h3 class="text-2xl font-semibold mb-4">Про школу</h3>
-    <p class="text-sm sm:text-base">Veritas — це онлайн-школа, яка спеціалізується на індивідуальному навчанні дітей та підлітків з математики, логіки та комп’ютерної грамотності. Ми працюємо тільки з найкращими викладачами, які пройшли суворий відбір.</p>
+  <section id="about" class="fade-in max-w-4xl mx-auto py-20 px-6 bg-white rounded-3xl shadow-md mt-[-60px] relative z-10">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Про школу</h2>
+    <p class="text-base sm:text-lg text-gray-700 text-center">
+      Veritas — це онлайн-школа, яка спеціалізується на індивідуальному навчанні дітей та підлітків з математики, логіки та комп’ютерної грамотності.
+      Ми працюємо тільки з найкращими викладачами, які пройшли суворий відбір.
+    </p>
   </section>
 
   <!-- Services -->
-  <section id="services" class="fade-in bg-gray-100 py-10 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h3 class="text-2xl font-semibold mb-4">Послуги</h3>
-      <ul class="list-disc list-inside space-y-2 text-sm sm:text-base">
-        <li>Підготовка до НМТ, ДПА, ЗНО</li>
-        <li>Онлайн-уроки 1-на-1</li>
-        <li>Власна CRM-система для відстеження занять</li>
-        <li>Підтримка батьків у Viber або Telegram</li>
-      </ul>
-    </div>
+  <section id="services" class="fade-in max-w-4xl mx-auto py-20 px-6 mt-12 bg-gray-100 rounded-3xl shadow-md">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Послуги</h2>
+    <ul class="list-disc list-inside space-y-3 text-base text-gray-800">
+      <li>Підготовка до НМТ, ДПА, ЗНО</li>
+      <li>Онлайн-уроки 1-на-1</li>
+      <li>Власна CRM-система для відстеження занять</li>
+      <li>Підтримка батьків у Viber або Telegram</li>
+    </ul>
   </section>
 
   <!-- Offer -->
-  <section id="offer" class="fade-in max-w-4xl mx-auto py-10 px-4">
-    <h3 class="text-2xl font-semibold mb-4">Публічна оферта</h3>
-    <p class="text-sm sm:text-base">Усі послуги надаються відповідно до <a href="/offer.pdf" class="text-indigo-600 underline">договору публічної оферти</a>. Ви погоджуєтесь з умовами після здійснення оплати за навчання.</p>
+  <section id="offer" class="fade-in max-w-4xl mx-auto py-20 px-6 mt-12 bg-white rounded-3xl shadow-md">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Публічна оферта</h2>
+    <p class="text-base text-gray-700 text-center">
+      Усі послуги надаються відповідно до
+      <a href="/offer.pdf" class="text-indigo-600 underline hover:text-indigo-800">договору публічної оферти</a>.
+      Ви погоджуєтесь з умовами після здійснення оплати за навчання.
+    </p>
   </section>
 
   <!-- Sign Up -->
-  <section id="signup" class="fade-in py-10 px-4 bg-white">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-semibold mb-4">Запис на пробне заняття</h3>
-      <p class="mb-6 text-sm sm:text-base">
-        Будь ласка, заповніть коротку форму — ми зв’яжемося з вами найближчим часом:
-      </p>
-      <a href="https://forms.gle/gy3fi1St4Jqun8nk6" target="_blank" class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white text-sm sm:text-base font-semibold rounded-lg shadow transition">
-        Перейти до форми
-      </a>
-    </div>
+  <section id="signup" class="fade-in max-w-4xl mx-auto py-20 px-6 mt-12 bg-indigo-50 rounded-3xl shadow-md text-center">
+    <h2 class="text-3xl font-semibold mb-6">Запис на пробне заняття</h2>
+    <p class="text-base text-gray-700 mb-6">Будь ласка, заповніть коротку форму — ми зв’яжемося з вами найближчим часом:</p>
+    <a href="https://forms.gle/gy3fi1St4Jqun8nk6" target="_blank"
+      class="inline-block px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white rounded-xl shadow-lg transition-transform hover:scale-105 text-lg font-semibold">
+      Перейти до форми
+    </a>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="fade-in bg-gray-100 py-10 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h3 class="text-2xl font-semibold mb-4">Контакти</h3>
-      <p class="text-sm sm:text-base">Email: <a href="mailto:veritas.school.ua@gmail.com" class="underline">veritas.school.ua@gmail.com</a></p>
-      <p class="text-sm sm:text-base">Telegram: <a href="https://t.me/veritas_school" class="underline">@veritas_school</a></p>
+  <section id="contact" class="fade-in max-w-4xl mx-auto py-20 px-6 mt-12 bg-white rounded-3xl shadow-md">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Контакти</h2>
+    <div class="text-center space-y-2 text-base text-gray-700">
+      <p>Email: <a href="mailto:veritas.school.ua@gmail.com" class="underline text-indigo-600 hover:text-indigo-800">veritas.school.ua@gmail.com</a></p>
+      <p>Telegram: <a href="https://t.me/veritas_school" class="underline text-indigo-600 hover:text-indigo-800">@veritas_school</a></p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white shadow p-4 text-center text-xs sm:text-sm">
+  <footer class="text-center text-sm text-gray-500 py-6 mt-16">
     © 2025 Veritas. Усі права захищено.
   </footer>
 
-  <!-- Scroll-triggered animation -->
+  <!-- Animation -->
   <script>
     function revealOnScroll() {
       const fadeIns = document.querySelectorAll('.fade-in');
@@ -107,10 +113,8 @@
         }
       });
     }
-
     window.addEventListener('scroll', revealOnScroll);
     window.addEventListener('load', revealOnScroll);
   </script>
-
 </body>
 </html>
